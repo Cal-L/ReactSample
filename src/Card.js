@@ -17,7 +17,7 @@ const styles = {
     margin: 10,
     height: 75,
     width: 50,
-    backgroundColor: 'white',
+    backgroundColor: 'pink',
     borderRadius: 10,
   }
 }
