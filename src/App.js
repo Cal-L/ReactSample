@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import Card from './Card';
 
 class App extends Component {
 
@@ -36,6 +37,7 @@ class App extends Component {
 
     return (
       <div style={styles.container}>
+        <Card />
         <div 
           onMouseLeave={(event) => this.onClickUp(event)}
           onMouseDown={(event) => this.onClickDown(event)}
@@ -65,6 +67,7 @@ export default App;
 const styles = {
   container: {
     display: 'flex',
+    flexDirection: 'column',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
