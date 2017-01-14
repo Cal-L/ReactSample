@@ -34,10 +34,11 @@ class App extends Component {
 
   render() {
     const buttonColor = this.state.buttonPressed ? "#3a6b94" : "#569cd6";
+    const card = this.state.buttonPressed ? <Card /> : null;
 
     return (
       <div style={styles.container}>
-        <Card />
+        { card }
         <div 
           onMouseLeave={(event) => this.onClickUp(event)}
           onMouseDown={(event) => this.onClickDown(event)}
